@@ -18,48 +18,41 @@ void XuatMang(int A[], const int& N) {
 #include <vector>
 using namespace std;
 
-void merge_2_Sorted_subArray(int a[], int l, int middle,int r) {
-    int n1 = middle - l + 1;
-    int n2 = r - middle;
+void merge_2_Sorted_subArray(int a[], int l, int middle, int r) {
+    if (l >= r || l < 0)return;
 
-    int i = 0;
-    int j = 0;
-    int k = l;
+    int n_temp = r - l + 1;
 
-    vector<int> L(n1);
-    vector<int> R(n2);
+    vector<int> temp(n_temp);
 
-    for (int i = 0; i < n1;i++) {
-        L[i] = a[l + i];
-    }
-    for (int i = 0;i < n2;i++) {
-        R[j] = a[middle + 1 + j];
-    }
+    int i = l;
+    int j = middle + 1;
+    int k = 0;
 
-    
 
-    while (i < n1 && j < n2) {
-        if (L[i] <= R[j]) {
-            a[k] = L[i];
-            i++;
+    while (i <= middle && j <= r) {
+        if (a[i] <= a[j]) {
+            temp[k++] = a[i++];
         }
         else {
-            a[k] = R[j];
-            j++;
+            temp[k++] = a[j++];
+
         }
-        k++;
     }
-        while (i < n1) {
-            a[k] = L[i];
-            i++;
-            k++;
+
+    while (i <= middle) {
+        temp[k++] = a[i++];
     }
-        while (j < n2) {
-            a[k] = R[j];
-            j++;
-            k++;
-        }
+    while (j <= r) {
+        temp[k++] = a[j++];
+    }
+    for (int p = 0; p < k;p++) {
+        a[l + p] = temp[p];
+    }
+
 }
+
+
 
 
 int main() {

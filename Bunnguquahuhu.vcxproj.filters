@@ -18,5 +18,8 @@
     <ClCompile Include="Lab 2 bai 3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Lab 2 bai 4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
