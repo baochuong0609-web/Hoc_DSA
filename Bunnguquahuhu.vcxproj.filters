@@ -13,24 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\NewFilter1">
+      <UniqueIdentifier>{7d6e090e-7c08-48e4-8189-b7cfade1100b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lab 2 bai 3.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\NewFilter1</Filter>
     </ClCompile>
     <ClCompile Include="Lab 2 bai 4.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\NewFilter1</Filter>
     </ClCompile>
     <ClCompile Include="Lab 2 bai 5.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\NewFilter1</Filter>
     </ClCompile>
     <ClCompile Include="Lab 2 bai 6.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\NewFilter1</Filter>
     </ClCompile>
     <ClCompile Include="Lab 2 bai 7.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\NewFilter1</Filter>
     </ClCompile>
     <ClCompile Include="Lab 2 bai 8.cpp">
+      <Filter>Source Files\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="Ontap1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ontap2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
