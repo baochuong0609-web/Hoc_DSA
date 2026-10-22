@@ -19,6 +19,9 @@
     <Filter Include="Source Files\NewFilter2">
       <UniqueIdentifier>{1264cdfd-7d8c-43b9-8cb0-321e81c284e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\NewFilter3">
+      <UniqueIdentifier>{b8fa49ba-140c-42a9-9e3f-3fb84fec08bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lab 2 bai 3.cpp">
@@ -50,6 +53,9 @@
     </ClCompile>
     <ClCompile Include="Ontap1.cpp">
       <Filter>Source Files\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon1.cpp">
+      <Filter>Source Files\NewFilter3</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
