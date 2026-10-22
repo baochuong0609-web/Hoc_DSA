@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-int BinarySearch(const vector <string>& a, string target) {
+int BinarySearch( vector <string>& a, string target) {
 	sort(a.begin(), a.end());
 	int left = 0;
 	int right = a.size() - 1;
