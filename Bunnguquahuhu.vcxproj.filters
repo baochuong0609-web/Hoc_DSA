@@ -63,5 +63,8 @@
     <ClCompile Include="Deon2.cpp">
       <Filter>Source Files\NewFilter3</Filter>
     </ClCompile>
+    <ClCompile Include="Deon3.cpp">
+      <Filter>Source Files\NewFilter3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
