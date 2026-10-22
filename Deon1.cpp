@@ -7,6 +7,7 @@ using namespace std;
 
 //Mảng đã xếp sẵn từ cao xuống thấp nên nếu target lớn hơn mid thì biên phải sẽ phải lùi
 //Còn mảng xếp từ thấp lên cao mới ngược lại
+//Input đã xếp sẵn rồi nên không cần sort nữa, nếu sort sẽ tốn thời gian và bị TLE
 bool binary_search(int a[], int n, int target) {
     int left = 0;
     int right = n - 1;
