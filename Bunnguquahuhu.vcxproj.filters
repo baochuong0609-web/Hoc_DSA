@@ -57,5 +57,8 @@
     <ClCompile Include="Deon1.cpp">
       <Filter>Source Files\NewFilter3</Filter>
     </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files\NewFilter3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
