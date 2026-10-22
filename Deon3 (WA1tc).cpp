@@ -2,9 +2,10 @@
 #include <vector>
 using namespace std;
 
-int binary(vector<long long> n, long long target) {
+int binary(vector<long long> &n, long long target) {
+	if (n.empty()) return -1;
 	int left = 0;
-	int right = n.size() - 1;
+	int right = (int)n.size() - 1;
 	
 	int midind = -1;
 	while (left <= right) {
@@ -17,13 +18,19 @@ int binary(vector<long long> n, long long target) {
 		
 		else left = mid + 1;
 	}
-	//if (midind != target && midind != -1) {
-	//	return -1;
-	//}
-	return midind;
+	if (midind != -1 && n[midind] == target) {
+		return midind;
+	}
+	return -1;
 }
 
 int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	long long x;
+	cin >> x;
+
 	int n;
 	cin >> n;
 	vector <long long> code(n);
@@ -31,11 +38,10 @@ int main() {
 		cin >> code[i];
 	}
 
-	long long x;
-	cin >> x;
+	
 	int index=binary(code, x);
 	if (index != -1) {
-		cout << index + 1;
+		cout << index+1;
 	}
 	else cout << -1;
 }
