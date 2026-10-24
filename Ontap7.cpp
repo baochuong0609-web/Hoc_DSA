@@ -28,7 +28,7 @@ void quicksorttrace(vector<int>& a, int left, int right) {
 
 	int i = left;int j = right;
 
-	while (i <= j) {
+	while (i < j) {
 		while (a[i] > pivot) i++;
 		while (a[j] < pivot) j--;
 		if (i <= j) {
@@ -44,7 +44,7 @@ void quicksorttrace(vector<int>& a, int left, int right) {
 
 	quicksorttrace(a, left, j);
 	quicksorttrace(a, i, right);
-
+		
 }
 
 
