@@ -61,7 +61,7 @@ void QuickSort(Hocsinh ls[], int b, int e) {
             j--;
         }
     }
-    QuickSort(ls, i, b);
-    QuickSort(ls, e, j);
+    QuickSort(ls, b, j);
+    QuickSort(ls, i, e);
 }
 
