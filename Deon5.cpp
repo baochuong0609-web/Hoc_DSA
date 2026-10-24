@@ -2,68 +2,61 @@
 #include <vector>
 using namespace std;
 
-struct td {
-	float x;
-	float y;
-	float z;
+
+struct toado {
+	double x;
+	double y;
+	double z;
 };
 
-bool isEqual(td &a, td &b) {
-	if ((a.x == b.x) && (a.y == b.y) && (a.z == b.z))
-		return true;
-	return false;
+bool isEqual(toado& a, toado& b) {
+	return (a.x == b.x) && (a.y == b.y) && (a.z == b.z);
 }
 
-bool isLess(td& a, td& b) {
+bool isLess(toado& a, toado& b) {
 	if (a.x != b.x) return a.x < b.x;
 	if (a.y != b.y) return a.y < b.y;
 	return a.z < b.z;
-	
 }
 
-int binsearch(vector<td> &a, td target) {
+int binarysearch(vector<toado>& a, toado target) {
 	int left = 0;
 	int right = a.size() - 1;
-	
 	int time = 0;
+	
 	while (left <= right) {
-		time++;
 		int mid = left + (right - left) / 2;
-		if (isEqual(target, a[mid])) {
-			return time;
-		}
-		else if (isLess(a[mid], target)) {
-			left = mid + 1;
-			
-		}
-		else {
-			right = mid - 1;
-			
-		}
+		time++;
 
+		if (isEqual(a[mid], target)) return time;
+		else if (isLess(target,a[mid])) right = mid - 1;
+		else left = mid + 1;
 	}
 	return -1;
 }
 
 int main() {
+
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+
 	int n;
 	cin >> n;
-	vector<td> toado(n);
+	vector<toado>a(n);
 	for (int i = 0;i < n;i++) {
-		cin >> toado[i].x >> toado[i].y >> toado[i].z;
+		cin >> a[i].x >> a[i].y >> a[i].z;
 	}
 
 	int x;
 	cin >> x;
-	td search;
+	toado find;
 	while (x--) {
-		cin >> search.x >> search.y >> search.z;
-		int index = binsearch(toado, search);
+		cin >> find.x >> find.y>>find.z;
 
-		if (index != -1) {
-			cout << index<<"\n";
-		}
-		else cout << "KHONG\n";
+		int index = binarysearch(a,find);
+		if (index != -1) cout << index << "\n";
+		else cout << "KHONG" << "\n";
 	}
 	return 0;
+
 }
