@@ -2,22 +2,22 @@
 #include <vector>
 using namespace std;
 
-struct SV {
-	int code;
-	string ten;
-	int diem;
+struct sv {
+	int id;
+	string name;
+	int score;
 };
 
-bool isLess(SV& a, SV& b) {
-	if (a.diem != b.diem) return a.diem > b.diem;
-	return a.ten < b.ten;
+bool isLess(sv& a, sv& b) {
+	if (a.score != b.score) return a.score > b.score;
+	return a.name < b.name;
 }
 
-void insertionsort(vector <SV>& a, int n) {
+void insertionsort(vector<sv>& a, int n) {
 	for (int i = 1;i < n;i++) {
 		int q = i - 1;
-		SV temp;
-		temp = a[i];
+		sv temp = a[i];
+
 		while (q >= 0) {
 			if (isLess(temp, a[q])) {
 				a[q + 1] = a[q];
@@ -32,14 +32,13 @@ void insertionsort(vector <SV>& a, int n) {
 int main() {
 	int n;
 	cin >> n;
-	vector <SV>a(n);
+	vector <sv>a(n);
 	for (int i = 0;i < n;i++) {
-		cin >> a[i].code >> a[i].ten >> a[i].diem;
+		cin >> a[i].id >> a[i].name >> a[i].score;
 	}
 
 	insertionsort(a, n);
 	for (int i = 0;i < n;i++) {
-		cout << a[i].code << " " << a[i].ten << " " << a[i].diem <<"\n";
+		cout << a[i].id << " " << a[i].name << " " << a[i].score << "\n";
 	}
-	return 0;
 }
