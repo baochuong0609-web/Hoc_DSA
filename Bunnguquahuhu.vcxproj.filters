@@ -78,5 +78,8 @@
     <ClCompile Include="Deon6.cpp">
       <Filter>Source Files\NewFilter3</Filter>
     </ClCompile>
+    <ClCompile Include="Ontap7.cpp">
+      <Filter>Source Files\NewFilter2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
