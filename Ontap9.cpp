@@ -13,16 +13,12 @@ void NhapMang(int A[], int& N) {
 using namespace std;
 
 void merge_2_Sorted_subArray(int a[], int left, int mid, int right) {
-    
-    int n = right - left + 1;
-    vector<int> temp;
-     mid = left + (right - left) / 2;
     int i = left;
     int j = mid + 1;
-    
+    vector <int> temp;
 
-    while (i<=mid && j<=right ) {
-        if (a[i] <= a[j]) {
+    while (i <= mid && j <= right) {
+        if (a[i] < a[j]) {
             temp.push_back(a[i]);
             i++;
         }
@@ -30,25 +26,19 @@ void merge_2_Sorted_subArray(int a[], int left, int mid, int right) {
             temp.push_back(a[j]);
             j++;
         }
-
-
     }
-
     while (i <= mid) {
         temp.push_back(a[i]);
         i++;
     }
-
     while (j <= right) {
         temp.push_back(a[j]);
         j++;
     }
-    for (int k = 0;k < temp.size();k++) {
+    
+    for(int k = 0;k<temp.size();k++){
         a[left + k] = temp[k];
     }
-
-
-
 }
 
 
