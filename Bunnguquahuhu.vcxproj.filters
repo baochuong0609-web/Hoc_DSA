@@ -13,88 +13,91 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\NewFilter1">
+    <Filter Include="Source Files\Lab">
       <UniqueIdentifier>{7d6e090e-7c08-48e4-8189-b7cfade1100b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\NewFilter2">
+    <Filter Include="Source Files\Redo-Lab">
       <UniqueIdentifier>{1264cdfd-7d8c-43b9-8cb0-321e81c284e5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\NewFilter3">
+    <Filter Include="Source Files\Practice">
       <UniqueIdentifier>{b8fa49ba-140c-42a9-9e3f-3fb84fec08bd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lab 2 bai 3.cpp">
-      <Filter>Source Files\NewFilter1</Filter>
+      <Filter>Source Files\Lab</Filter>
     </ClCompile>
     <ClCompile Include="Lab 2 bai 4.cpp">
-      <Filter>Source Files\NewFilter1</Filter>
+      <Filter>Source Files\Lab</Filter>
     </ClCompile>
     <ClCompile Include="Lab 2 bai 5.cpp">
-      <Filter>Source Files\NewFilter1</Filter>
+      <Filter>Source Files\Lab</Filter>
     </ClCompile>
     <ClCompile Include="Lab 2 bai 6.cpp">
-      <Filter>Source Files\NewFilter1</Filter>
+      <Filter>Source Files\Lab</Filter>
     </ClCompile>
     <ClCompile Include="Lab 2 bai 7.cpp">
-      <Filter>Source Files\NewFilter1</Filter>
+      <Filter>Source Files\Lab</Filter>
     </ClCompile>
     <ClCompile Include="Lab 2 bai 8.cpp">
-      <Filter>Source Files\NewFilter1</Filter>
+      <Filter>Source Files\Lab</Filter>
     </ClCompile>
     <ClCompile Include="Ontap4.cpp">
-      <Filter>Source Files\NewFilter2</Filter>
+      <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
     <ClCompile Include="Ontap3.cpp">
-      <Filter>Source Files\NewFilter2</Filter>
+      <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
     <ClCompile Include="Ontap2.cpp">
-      <Filter>Source Files\NewFilter2</Filter>
+      <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
     <ClCompile Include="Ontap1.cpp">
-      <Filter>Source Files\NewFilter2</Filter>
+      <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
     <ClCompile Include="Deon1.cpp">
-      <Filter>Source Files\NewFilter3</Filter>
+      <Filter>Source Files\Practice</Filter>
     </ClCompile>
     <ClCompile Include="Deon2.cpp">
-      <Filter>Source Files\NewFilter3</Filter>
+      <Filter>Source Files\Practice</Filter>
     </ClCompile>
     <ClCompile Include="Deon3 %28WA1tc%29.cpp">
-      <Filter>Source Files\NewFilter3</Filter>
+      <Filter>Source Files\Practice</Filter>
     </ClCompile>
     <ClCompile Include="Deon4.cpp">
-      <Filter>Source Files\NewFilter3</Filter>
+      <Filter>Source Files\Practice</Filter>
     </ClCompile>
     <ClCompile Include="Ontap5.cpp">
-      <Filter>Source Files\NewFilter2</Filter>
+      <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
     <ClCompile Include="Deon5.cpp">
-      <Filter>Source Files\NewFilter3</Filter>
+      <Filter>Source Files\Practice</Filter>
     </ClCompile>
     <ClCompile Include="Ontap6.cpp">
-      <Filter>Source Files\NewFilter2</Filter>
+      <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
     <ClCompile Include="Deon6.cpp">
-      <Filter>Source Files\NewFilter3</Filter>
+      <Filter>Source Files\Practice</Filter>
     </ClCompile>
     <ClCompile Include="Ontap7.cpp">
-      <Filter>Source Files\NewFilter2</Filter>
+      <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
     <ClCompile Include="Deon7.cpp">
-      <Filter>Source Files\NewFilter3</Filter>
+      <Filter>Source Files\Practice</Filter>
     </ClCompile>
     <ClCompile Include="Ontap8.cpp">
-      <Filter>Source Files\NewFilter2</Filter>
+      <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
     <ClCompile Include="Ontap9.cpp">
-      <Filter>Source Files\NewFilter2</Filter>
+      <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
     <ClCompile Include="Ontap10.cpp">
-      <Filter>Source Files\NewFilter2</Filter>
+      <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
     <ClCompile Include="Deon8.cpp">
-      <Filter>Source Files\NewFilter3</Filter>
+      <Filter>Source Files\Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon9.cpp">
+      <Filter>Source Files\Practice</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

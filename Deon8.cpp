@@ -14,7 +14,7 @@ void swap(int& a, int& b) {
 	a = b;b = temp;
 }
 int quicksort(vector<int>& a, int left, int right) {
-	if (left >= right) return -1;
+	if (left >= right) return left;
 	
 	
 	int pivot = a[right];
@@ -30,7 +30,7 @@ int quicksort(vector<int>& a, int left, int right) {
 	swap(a[i + 1], a[right]);
 	return i + 1;
 	//quicksort(a, left, i);
-	//quicksort(a, i+2, right);		// có 2 dòng này là sort tới cùng
+	//quicksort(a, i+2, right);		// có 2 dòng này là sort tăng dần tới cùng
 }
 
 int main() {
@@ -45,4 +45,5 @@ int main() {
 	int index = quicksort(a, 0, n - 1);
 	Output(a, n);
 	cout <<index;
+	return 0;
 }
