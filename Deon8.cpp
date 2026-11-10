@@ -13,6 +13,7 @@ void swap(int& a, int& b) {
 	int temp = a;
 	a = b;b = temp;
 }
+
 int quicksort(vector<int>& a, int left, int right) {
 	if (left >= right) return left;
 	
