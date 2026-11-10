@@ -22,26 +22,20 @@
     <Filter Include="Source Files\Practice">
       <UniqueIdentifier>{b8fa49ba-140c-42a9-9e3f-3fb84fec08bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Lab\DSLK">
+      <UniqueIdentifier>{e6198b52-2146-401d-8b32-23644d25268a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lab\Sort">
+      <UniqueIdentifier>{8b84136f-56ed-43c8-a07b-3b3bca972a4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lab\BST">
+      <UniqueIdentifier>{c952981d-5e05-40df-8c92-ecf0089d6275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Practice\Sort">
+      <UniqueIdentifier>{40c6f978-c78c-47b7-8300-b7b41a910bcd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lab 2 bai 3.cpp">
-      <Filter>Source Files\Lab</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab 2 bai 4.cpp">
-      <Filter>Source Files\Lab</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab 2 bai 5.cpp">
-      <Filter>Source Files\Lab</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab 2 bai 6.cpp">
-      <Filter>Source Files\Lab</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab 2 bai 7.cpp">
-      <Filter>Source Files\Lab</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab 2 bai 8.cpp">
-      <Filter>Source Files\Lab</Filter>
-    </ClCompile>
     <ClCompile Include="Ontap4.cpp">
       <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
@@ -54,35 +48,14 @@
     <ClCompile Include="Ontap1.cpp">
       <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
-    <ClCompile Include="Deon1.cpp">
-      <Filter>Source Files\Practice</Filter>
-    </ClCompile>
-    <ClCompile Include="Deon2.cpp">
-      <Filter>Source Files\Practice</Filter>
-    </ClCompile>
-    <ClCompile Include="Deon3 %28WA1tc%29.cpp">
-      <Filter>Source Files\Practice</Filter>
-    </ClCompile>
-    <ClCompile Include="Deon4.cpp">
-      <Filter>Source Files\Practice</Filter>
-    </ClCompile>
     <ClCompile Include="Ontap5.cpp">
       <Filter>Source Files\Redo-Lab</Filter>
-    </ClCompile>
-    <ClCompile Include="Deon5.cpp">
-      <Filter>Source Files\Practice</Filter>
     </ClCompile>
     <ClCompile Include="Ontap6.cpp">
       <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
-    <ClCompile Include="Deon6.cpp">
-      <Filter>Source Files\Practice</Filter>
-    </ClCompile>
     <ClCompile Include="Ontap7.cpp">
       <Filter>Source Files\Redo-Lab</Filter>
-    </ClCompile>
-    <ClCompile Include="Deon7.cpp">
-      <Filter>Source Files\Practice</Filter>
     </ClCompile>
     <ClCompile Include="Ontap8.cpp">
       <Filter>Source Files\Redo-Lab</Filter>
@@ -93,20 +66,62 @@
     <ClCompile Include="Ontap10.cpp">
       <Filter>Source Files\Redo-Lab</Filter>
     </ClCompile>
-    <ClCompile Include="Deon8.cpp">
-      <Filter>Source Files\Practice</Filter>
-    </ClCompile>
-    <ClCompile Include="Deon9.cpp">
-      <Filter>Source Files\Practice</Filter>
+    <ClCompile Include="Lab 3 bai 3.cpp">
+      <Filter>Source Files\Lab\DSLK</Filter>
     </ClCompile>
     <ClCompile Include="Lab 3 bai 1.cpp">
-      <Filter>Source Files\Lab</Filter>
+      <Filter>Source Files\Lab\DSLK</Filter>
     </ClCompile>
     <ClCompile Include="Lab 3 bai 2.cpp">
-      <Filter>Source Files\Lab</Filter>
+      <Filter>Source Files\Lab\DSLK</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab 2 bai 3.cpp">
+      <Filter>Source Files\Lab\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab 2 bai 4.cpp">
+      <Filter>Source Files\Lab\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab 2 bai 5.cpp">
+      <Filter>Source Files\Lab\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab 2 bai 6.cpp">
+      <Filter>Source Files\Lab\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab 2 bai 7.cpp">
+      <Filter>Source Files\Lab\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab 2 bai 8.cpp">
+      <Filter>Source Files\Lab\Sort</Filter>
     </ClCompile>
     <ClCompile Include="Lab 4 bai 1.cpp">
-      <Filter>Source Files\Lab</Filter>
+      <Filter>Source Files\Lab\BST</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon1.cpp">
+      <Filter>Source Files\Practice\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon2.cpp">
+      <Filter>Source Files\Practice\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon3 %28WA1tc%29.cpp">
+      <Filter>Source Files\Practice\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon4.cpp">
+      <Filter>Source Files\Practice\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon5.cpp">
+      <Filter>Source Files\Practice\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon6.cpp">
+      <Filter>Source Files\Practice\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon7.cpp">
+      <Filter>Source Files\Practice\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon8.cpp">
+      <Filter>Source Files\Practice\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Deon9.cpp">
+      <Filter>Source Files\Practice\Sort</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

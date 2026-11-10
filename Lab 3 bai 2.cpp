@@ -41,20 +41,22 @@ char& top(stack s) {
     return s.top->info;
 }
 
-void Input_infix(char infix[], int &ni){
+void Input_infix(char infix[], int& ni) {
     ni = 0;
     char c;
     while (cin >> c && c != '#') {
-        infix[ni++] = c;
+
+        if (ni < 100) {
+            infix[ni++] = c;
+        }
     }
 }
 
-
 int getPrecedence(char op) {
     if (op == '+' || op == '-') return 1;
-    if (op == '*' || op == '/') return 2;
+    if (op == '*' || op == '/' || op == '%') return 2;
     if (op == '^') return 3;
-     return 0;
+    return 0;
 }
 
 void infix_to_postfix(char infix[], int ni, char postfix[], int& np) {
@@ -80,11 +82,11 @@ void infix_to_postfix(char infix[], int ni, char postfix[], int& np) {
                 pop(s);
             }
         }
-        else {
+
+        else if (c == '+' || c == '-' || c == '*' || c == '/' || c == '^' || c == '%') {
             while (!empty(s) && top(s) != '(') {
                 char topOp = top(s);
-                if ((c != '^' && getPrecedence(topOp) >= getPrecedence(c)) ||
-                    (c == '^' && getPrecedence(topOp) > getPrecedence(c))) {
+                if (getPrecedence(topOp) >= getPrecedence(c)) {
                     postfix[np++] = topOp;
                     pop(s);
                 }
@@ -94,7 +96,8 @@ void infix_to_postfix(char infix[], int ni, char postfix[], int& np) {
             }
             push(s, c);
         }
-    } 
+    }
+
     while (!empty(s)) {
         postfix[np++] = top(s);
         pop(s);
@@ -102,12 +105,15 @@ void infix_to_postfix(char infix[], int ni, char postfix[], int& np) {
 }
 
 void Output(char postfix[], int np) {
-    for (int i = 0;i < np;i++) {
-        cout << postfix[i] << " ";
+    if (np == 0) return;
+
+    for (int i = 0; i < np; i++) {
+        cout << postfix[i];
+        if (i < np - 1) cout << " ";
     }
+
+    cout << "\n";
 }
-
-
 
 
 int main() {
